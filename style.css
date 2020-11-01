@@ -693,6 +693,7 @@ body > div > section > div > div.end1 > div.end > ul > li:hover > a > span{
 body > div > section > div > div.end1 > div.end > p{
     font-size: 12px;
 }
+/* responsive */
 @media only screen and (max-width: 1300px){
     body > div > section > div > div.gallery > div{
         justify-content: center;
