@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <script src="http://code.jquery.com/jquery-3.2.1.min.js"></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.1/css/all.min.css" integrity="sha512-+4zCK9k+qNFUR5X+cKL9EIR+ZOhtIloNl9GIKS57V1MyNsYpYcUrUeQc9vNfzsWfV28IaLL3i96P9sdNyeRssA==" crossorigin="anonymous" />
+   
+    <title>Tomasz Topor</title>
+    <script type="text/javascript">
+        $(document).ready(function(){
+        $('ul li a').click(function(){
+        $('li a').removeClass("active");
+        $(this).addClass("active");
+        });
+        });
+    </script>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <div class="video-container">
+    <video autoplay muted loop>
+        <source src="film/pulse.mp4" type="video/mp4">
+    </video>
+    </div>
+    <div class="video-overlay"> <h1>Hello, I'm <span>Tomasz Topor.</span></h1>
+                                <p>I'm a fornt-end web developer.</p>
+
+
+                                <br>
+                                <br>
+                                <a href="#About">
+                                <div class="button page-link">
+                                    View my work         
+                                    <i class=" fas fa-arrow-right"></i>
+                                </div>      </a>              
+    </div>
+    
+    
+</header>
+
+<section class="aboutMe">
+   <a ><nav> <ul>
+    <li><a href="#Home">HOME</a></li>
+    <li><a href="#About" class="active">ABOUT</a></li>
+    <li><a href="#Portfolio">PORTFOLIO</a></li>
+    <li><a href="#Contact">CONTACT</a></li>
+    
+</ul>    </nav></a>
+
+</section>
+<a name="About"><section class="About">
+    <div>
+        <h1 data-aos="fade-right" data-aos-duration="800" >ABOUT</h1>
+        <div class="header-bar" data-aos="fade-right" data-aos-duration="1500"></div>
+    </div>
+    <div class="Allpriority">
+        <div class="priotity"> <ul>
+            <li data-aos="flip-left" data-aos-duration="1500"><i class="fas fa-rocket"></i> <p class="uno">FAST</p><p class="secondo">Fast load times and lag free interaction, my highest priority.</p></li>
+            <li data-aos="flip-left" data-aos-duration="2000"><i class="fas fa-tachometer-alt"></i> <p class="uno">RESPONSIVE</p><p class="secondo">My layouts will work on any device, big or small.</p></li>
+            <li data-aos="flip-left" data-aos-duration="2500"><i class="far fa-lightbulb"></i><p class="uno">INTULITIVE</p><p class="secondo">Strong preference for easy to use, intuitive UX/UI.</p></li>
+            <li data-aos="flip-left" data-aos-duration="3000"><i class="fas fa-laptop-code"></i><p class="uno">DYNAMIC</p><p class="secondo">Websites don't have to be static, I love making pages come to life.</p></li></ul></div>
+       
+    </div>
+    <div class="MoreAbout">
+        <div class="photo" data-aos="fade-right" data-aos-duration="800"><div class="info"><p class="who">Who's this guy?</p><p class="whoAbout">I'm a  <strong >Front-End Developer</strong>  working on contract,
+            I have serious passion for UI effects, animations and creating <strong class="colorfull">intuitive</strong>, dynamic user experiences. <br>
+           <p class="colorfull"> Let's make something special.</p></p><br><p></p></div></div>
+        <div class="container" data-aos="fade-left" data-aos-duration="800">
+            <div class="skills">
+                <div class="skill">
+                  <div class="skill-name"> <p>HTML</p></div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="90"></div>
+                  </div>
+                </div>
+          
+                <div class="skill">
+                  <div class="skill-name"><p>CSS</p></div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="70"></div>
+                  </div>
+                </div>
+          
+                <div class="skill">
+                  <div class="skill-name"><p>JavaScript</p></div>
+                  <div class="skill-bar">
+                    <div class="skill-per" per="40"></div>
+                  </div>
+                </div>
+
+                <div class="skill">
+                    <div class="skill-name"><p>React</p></div>
+                    <div class="skill-bar">
+                      <div class="skill-per" per="20"></div>
+                    </div>
+                  </div>
+
+
+                  
+
+
+                  <div class="skill">
+                    <div class="skill-name"><p>Photoshop</p></div>
+                    <div class="skill-bar">
+                      <div class="skill-per" per="50"></div>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <div class="skill-name"><p>Node.js</p></div>
+                    <div class="skill-bar">
+                      <div class="skill-per" per="20"></div>
+                    </div>
+                  </div>
+                  <div class="skill">
+                    <div class="skill-name"><p>UI Design</p></div>
+                    <div class="skill-bar">
+                      <div class="skill-per" per="50"></div>
+                    </div>
+                  </div>
+              </div>
+          
+              <script>
+                $('.skill-per').each(function(){
+                  var $this = $(this);
+                  var per = $this.attr('per');
+                  $this.css("width",per+'%');
+                  $({animatedValue: 0}).animate({animatedValue: per},{
+                    duration: 1000,
+                    step: function(){
+                      $this.attr('per', Math.floor(this.animatedValue) + '%');
+                    },
+                    complete: function(){
+                      $this.attr('per', Math.floor(this.animatedValue) + '%');
+                    }
+                  });
+                });
+              </script>
+        </div>
+    </div>
+</section></a>
+<div class="port" name="Portfolio"><section class="Portfolio" name="Portfolio"><div class="ProjectsAll"><h1 name="Portfolio"  data-aos="fade-right" data-aos-duration="800"><a name="Portfolio">PROJECTS</a></h1><div class="header-bar"  data-aos="fade-right" data-aos-duration="1500"></div>
+    <div class="gallery">
+<ul>
+<li class="list active" data-filter="all">All</li>
+<li class="list" data-filter="js">JavaScript</li>
+<li class="list" data-filter="react">React</li>
+<li class="list" data-filter="cssHtml">CSS&HTML</li>
+
+
+</ul>
+
+<div class="products">
+    <div class="itemBox cssHtml"  data-aos="fade-up"  data-aos-duration="1000"> <img src="gallery2/itb1.PNG" alt=""><div class="Allover"><p>Construction Web</p><br><p class="pinky">My first project</p><div class="bttn2"> <a href="https://itbbud.pl/"><p>Learn more</p></a></div></div></div>
+    <div class="itemBox js cssHtml"  data-aos="fade-up"  data-aos-duration="1300"> <img src="gallery2/Picnic1.PNG" alt=""><div class="Allover"><p>Web for VIII Technology Picnic </p><br><p class="pinky">Web for competition</p><div class="bttn2"> <a href="https://neqts.github.io/KonkursZSEM/"><p>Learn more</p></a></div></div></div>
+    <div class="itemBox cssHtml"  data-aos="fade-up"  data-aos-duration="1600"> <img src="gallery2/school1.PNG" alt=""><div class="Allover"><p>School web</p><br><p class="pinky">Poject for school</p><div class="bttn2"><a href="https://neqts.github.io/schoolWeb/"><p>Learn more</p></a></div></div></div>
+    <div class="itemBox js"  data-aos="fade-up"  data-aos-duration="1900"> <img src="gallery2/todos1.PNG" alt=""><div class="Allover"><p>To do list for plannig day</p><br><p class="pinky">To do list</p><div class="bttn2"><a href="https://neqts.github.io/YoursToDos/"><p>Learn more</p></a></div></div></div>
+    <div class="itemBox react js"  data-aos="fade-up"  data-aos-duration="2100"> <img src="gallery2/gatsby1.PNG" alt=""><div class="Allover"><p>Mastergatsby course</p><br><p class="pinky">Pizza web </p><div class="bttn2"><a href="https://gatsby.pizza/"><p>Learn more</p></a></div></div></div>
+    
+   
+ 
+
+   
+    
+</div>
+<script
+  src="https://code.jquery.com/jquery-3.5.1.js"
+  integrity="sha256-QWo7LDvxbWT2tbbQ97B53yJnYU3WhH/C8ycbRAkjPDc="
+  crossorigin="anonymous"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.list').click(function(){
+        const value = $(this).attr('data-filter');
+        if(value == 'all'){
+            $('.itemBox').show('1000');
+        }
+        else{
+            $('.itemBox').not('.'+value).hide('1000');
+            $('.itemBox').filter('.'+value).show('1000');
+        }
+    })
+
+   $('.list').click(function(){
+       $(this).addClass("active").siblings().removeClass("active");
+   })
+
+})
+</script>
+
+
+</div>
+<footer></footer><div class="end1"> <h1 data-aos="fade-right" data-aos-duration="800">CONTACT</h1> <div class="header-bar2" data-aos="fade-right" data-aos-duration="1500"></div>
+<form class="contactform" autocomplete="off" enctype="text/plain" method="post" style="opacity: 1; top: 0px;" action="mailto:ted1280@o2.pl" >
+    <label class="name">
+        <input class="inputName" type="text" name="name" id="name" pattern="^[a-zA-Z ]{3,}$" placeholder="name" required=""  data-aos="zoom-in">
+    </label>
+    <label class="email">
+        <input type="email" class="inputMail" name="email" id="email" placeholder="e-mail" required=""  data-aos="zoom-in">
+    </label>
+    <label class="content">
+        <textarea name="content" id="content" placeholder="text" minlength="10" required=""  data-aos="zoom-in"></textarea>
+    </label>
+    <label class="checkbox"><br><br><br>
+        <input type="checkbox" name="checkbox">
+       
+I consent to the processing of my data for contact purposes.<br><br><br>
+    </label>
+    <input type="submit" class="submit" value="send"  data-aos="zoom-in">
+</form>
+
+
+<div class="end"><ul>
+    <li><a href="#"><span class="fab fa-facebook-f"></span></a></li>
+   
+    <li><a href="#"><span class="fab fa-instagram"></span></a></li>
+    <li><a href="#"><span class="fab fa-github"></span></a></li>
+   
+</ul>
+<p>TOMASZ <strong class="colorfull2">TOPOR</strong> ©2020</p>
+</div>
+</div>
+
+</div></section></div>
+<script>
+    AOS.init();
+  </script>
+
+
+
+
+</body>
+
+</html>

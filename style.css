@@ -1,0 +1,796 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Raleway';
+
+}
+html, body {
+    scroll-behavior: smooth;
+}
+body {
+    color: #fff;
+    font-family: "Raleway";
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    margin: 0px;
+    overflow-x: hidden;
+    text-align: center;
+    overflow-x: hidden;
+}
+body > header{
+    display: flex;
+    height: 983px;
+}
+
+
+
+/* video */
+
+body > header > div {
+    position: absolute;
+    width: 100%;
+    height: 105%;
+    display: flex;
+
+}
+body > header > div > div.video-container{
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: -1;
+    display: flex;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+
+}
+body > header > div > div.video-container > video{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 100vw;
+    height: 50vw;
+    min-width: 485vw;
+    min-height: 150vh;
+    transform: translate(-50%, -50%);
+}
+
+/* video txt */
+
+body > header > div > div.video-overlay{
+  
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    align-items: center;
+    justify-content: center;
+   flex-direction: column;
+   font-family: 'Raleway';
+   display: flex;
+
+}
+body > header > div > div.video-overlay > h1 > span{
+  
+    color: #e31b6d;
+}
+
+body > header > div > div.video-container:after{
+    position: absolute;
+    top: 0;
+    left: 0;
+    display: block;
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.6);
+}
+body > header > div > div.video-overlay > h1 > span > p{
+    margin-top: 20px;;
+}
+body > header > div > div.video-overlay > h1{
+    font-size: 32pt;
+    line-height: 36pt;
+}
+body > header > div > div.video-overlay > p{
+    font-size: 32pt;
+    line-height: 36pt;
+}
+
+/* button */
+
+body > header > div > div.video-overlay > a > div{
+    border: 2px solid #fff;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13pt;
+    padding: 10px 20px;
+    transition: all 0.5s;
+    color: white;
+}
+body > header > div > div.video-overlay > a > div:hover{
+background-color:  rgb(4, 194, 201);
+border-color: rgb(4, 194, 201);
+}
+
+
+.page-link {
+    cursor: pointer;
+}
+body > header > div > div.video-overlay > a > div > i{
+    margin-left: 10px;
+ 
+   
+    transition: transform 0.3s;
+}
+body > header > div > div.video-overlay > a > div > i{
+    
+        content: "\F054";
+        vertical-align: middle;
+    
+}
+
+
+body > header > div > div.video-overlay > a > div:hover > i {
+    t -webkit-transform: rotate(45deg);
+    -moz-transform: rotate(90deg);
+    -ms-transform: rotate(90deg);
+    -o-transform: rotate(90deg);
+    transform: rotate(90deg);
+}
+
+/*  sekcja */
+.aboutMe {
+    display: block;
+  position: absolute;
+  height: 1500px;
+    width: 100%;
+    text-decoration: none;
+     display: flex;
+   
+  
+}
+a{
+    text-decoration: none;
+}
+
+/* heder bar */
+body > section > a > nav{
+    color: black;
+    text-decoration: none;
+}
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    bottom: 0;
+    left: 0;
+    margin-top: -16px;
+    position: sticky;
+    background: #1b232fdb;
+    border-bottom: 3px solid #04c2c9;
+    height: 50px;
+    text-align: left;
+    width: 100%;
+    z-index: 99;
+    top: 0;
+}
+body > section > nav > ul > a {
+    color: white;
+    display: block;
+    padding: 0 30px;
+    list-style-type: none;;
+
+}
+body > section > nav > ul{
+    width: 100%;
+    display: flex;
+  
+    float: right;
+    max-width: 1150px;
+    display: flex;
+    margin: 0;
+    padding: 0 100px;
+    float: right;
+    text-transform: uppercase;
+    line-height: 50px;
+
+}
+body > section > nav > ul > a:hover{
+    color: #e31b6d;
+    transition: all 0.3s ease;
+}
+
+
+body > a:nth-child(3) > section{
+    height: 1000px;
+   
+}
+
+
+
+
+.active{
+    color: #e31b6d;
+}
+
+
+body > div > section{
+    display: block;
+    position: absolute;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    height: 920px;
+    color: black;
+}
+body > section > nav > ul{
+    list-style-type: none;
+    padding:0 30px;
+}
+a{
+    color: white;
+}
+body > section > nav > ul > li:nth-child(3){
+    padding:0 30px;
+}
+body > section > nav > ul > li:nth-child(5) > a{
+    padding:0 30px;
+}
+/* About */
+
+body > a:nth-child(3) > section > div > h1{
+    font-size: 32pt;
+    color: #444649;
+    padding-top: 70px;
+}
+.header-bar {
+    background: #444649;
+    height: 4px;
+    margin: auto;
+    width: 70px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+
+body > a:nth-child(3) > section{
+    max-width: 1150px;
+    margin-left: auto; 
+    margin-right: auto;
+    width: 100%;
+  
+}
+body > a:nth-child(3) > section > div > div{
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+}
+body > a:nth-child(3) > section > div.Allpriority{
+    width: 100%;
+  
+}
+body > a:nth-child(3) > section > div.Allpriority > div{
+    width: 100%;
+    height: 30%;
+    margin-top: 70px;
+}
+
+body > a:nth-child(3) > section > div.Allpriority > div > ul{
+    display: flex;
+    list-style-type: none;
+}
+body > a:nth-child(3) > section > div.Allpriority > div > ul > li > i{
+    font-size: 50px;
+    background-image: url('icons/hexa.png');
+    padding:30px;
+    width: 120px;
+    height: 120px;
+  
+}
+
+
+body > a:nth-child(3) > section > div.Allpriority > div > ul > li{
+    width: 25%;
+  
+}
+body > a:nth-child(3) > section > div.Allpriority > div > ul > li > p{
+    color: #616161;
+    font-size: 16pt;
+    
+    margin: 15px 0 5px 0;
+}
+body > a:nth-child(3) > section > div.Allpriority > div > ul > li > p.secondo{
+    color: #616161;
+    font-size: 12pt;
+    padding-right: 20px;
+    padding-left: 20px;
+}
+body > a:nth-child(3) > section > div.Allpriority > div > ul > li > p.uno{
+    font-weight: 1000;
+}
+body > a:nth-child(3) > section > div.MoreAbout{
+    width: 100%;
+    height: 45%;
+    display: flex;
+    margin: 50px 0 0 0;
+}
+body > a:nth-child(3) > section > div.MoreAbout > div.photo{
+    width: 50%;
+    display: flex;
+    padding: 0 50px 0 50px;
+    justify-content: center;
+    color: black;
+    background-image: url(img/mi3.png);
+    background-repeat: no-repeat;
+    background-position: top;
+}
+
+body > a:nth-child(3) > section > div.MoreAbout > div.container{
+    width: 50%;
+}
+body > a:nth-child(3) > section > div.MoreAbout > div.photo > div{
+    padding: 400px 0 130px 0;
+}
+body > a:nth-child(3) > section > div.MoreAbout > div.photo > div > p.who{
+    padding-bottom: 20px;
+    font-weight: 1000;
+    font-size: 18pt;
+    color: #616161;
+}
+body > a:nth-child(3) > section > div.MoreAbout > div.photo > div > p.whoAbout{
+    line-height: 18pt;
+   font-size: 12pt;
+    color: #616161;
+}
+body > a:nth-child(3) > section > div.MoreAbout > div.photo > div > p.colorfull{
+    color: rgb(4, 194, 201); 
+}
+.colorfull{
+    color: rgb(4, 194, 201); 
+}
+/*progresbar */
+body > a:nth-child(3) > section > div.MoreAbout > div.container > div{
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    padding: 0 20px;
+}
+body > a:nth-child(3) > section > div.MoreAbout > div.container > div > div > div.skill-name{
+    font-size: 18px;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+   
+    color: #616161;
+    margin: 10px 0;
+}
+body > a:nth-child(3) > section > div.MoreAbout > div.container > div > div > div.skill-bar{
+    height: 20px;
+  background: #cacaca;
+  border-radius: 8px;
+}
+body > a:nth-child(3) > section > div.MoreAbout > div.container > div > div > div.skill-bar > div{
+    height: 20px;
+    background-color: #42c0fb;
+    border-radius: 8px;
+    width: 0;
+    transition: 1s linear;
+    position: relative;
+}
+body > a:nth-child(3) > section > div.MoreAbout > div.container > div > div > div.skill-bar > div:before{
+    content: attr(per);
+    position: absolute;
+    padding: 4px 6px;
+    background-color:  #e31b6d;
+    color: #fff;
+    font-size: 12px;
+    border-radius: 4px;
+    top: -35px;
+    right: 0;
+    transform: translateX(50%);
+}
+body > a:nth-child(3) > section > div.MoreAbout > div.container > div > div > div.skill-bar > div:after{
+    content: '';
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    background-color: #e31b6d;
+    top: -16px;
+    right: 0;
+    transform: translateX(50%) rotate(45deg);
+    border-radius: 2px;
+}
+body > div > section{
+    background: #f5f5f5;
+}
+
+/* Projekty */
+
+body > div > section > div > h1 > a{
+font-size: 32pt;
+    color: #444649;
+    padding-top: 50px;
+    margin-bottom: 10px;
+}
+body > div > section > div > h1{
+    padding: 20px;
+   
+}
+body > div > section > div{
+    max-width: 1280px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 100%;
+}
+body > div > section > div > div{
+    align-items: center;
+    justify-content: center;
+    margin: 10px auto 0 auto;
+}
+body > div > section > div > div.gallery{
+    padding:20px;
+    max-width: 1280px;
+    margin: 40px auto;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+   
+
+}
+body > div > section > div > div.gallery > ul{
+    display: flex;
+    margin-bottom: 10px;
+    justify-content: center;
+}
+body > div > section > div > div.gallery > ul > li{
+    list-style: none;
+    background: #eee;
+    padding:8px 20px;
+    margin:5px;
+    letter-spacing: 1px;
+    cursor: pointer;
+}
+body > div > section > div > div.gallery > ul > li.active{
+    background: #e31b6d;
+    color: #fff;
+}
+body > div > section > div > div.gallery > div{
+    display: flex;
+    flex-wrap: wrap;
+}
+body > div > section > div > div.gallery > div > .itemBox{
+    position: relative;
+    width: 300px;
+    height: 300px;
+    margin:5px;
+}
+body > div > section > div > div.gallery > div > div > img{
+    position:absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+
+}
+
+
+
+/*On photo text */
+
+body > div > section > div > div.gallery > div > div > div{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    opacity: 0;
+    background: #f5f5f5;
+}
+body > div > section > div > div.gallery > div > div > div:hover{
+    opacity: 1;
+    transition:all 1s ease;
+}
+body > div > section > div > div.gallery > div > div > div > div{
+    border: 2px solid #e31b6d ;
+    box-sizing: inherit;
+    cursor: pointer;
+    display: inline-block;
+    font-size: 13pt;
+    
+    transition: all 0.5s;
+    margin-top: 100px;
+    color: white;
+   
+}
+body > div > section > div > div.gallery > div > div > div > div:hover{
+    background-color:  #e31b6d;
+    border-color: #e31b6d;
+    color: white;
+}
+body > div > section > div > div.gallery > div > div > div > p.pinky{
+    color: #e31b6d;
+    margin-top: -20px;
+    color: white;
+}
+body > div > section > div > div.gallery > div > div > div > p{
+    margin-top: 30px;
+
+}
+body > div > section > div > div.gallery > div > div > div > div > a{
+    color:black;
+}
+body > div > section > div > div.gallery > div > div > div > div > a:hover{
+    color: white;
+}
+body > div > section > div > div.gallery > div > div > div > div > a > p{
+    width: 150px;
+    height: 44px;
+    padding-top: 10px;
+}
+body > div > section > div > div.gallery > div > div > div > p.pinky{
+    color: #e31b6d;
+}
+body > div > section > div > footer{
+   position: absolute;
+    background-image: url(img/bg15.png);
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    left: 0;
+       right: 0;
+       background-color: #f5f5f5;
+       background-position: center;
+       background-repeat: no-repeat;
+   
+}
+body > div > section > div > div:nth-child(5){
+    position:absolute;
+    width: 100%;
+    justify-content: center;
+    align-items: center;
+    height: 500px;
+    left: 0;
+    margin-top: 315px;
+    background-color:#252934 ;
+       right: 0;
+}
+body > div > section > div > div:nth-child(5) > h1{
+    color:white;
+    font-size: 30pt;
+    margin-bottom: 20px;
+
+
+
+
+}
+body > div > section > div > div.end1 > div.header-bar2 {
+    background: white;
+    height: 4px;
+    margin: auto;
+    width: 70px;
+    text-align: center;
+    justify-content: center;
+    display: flex;
+}
+.contact .contactForm {
+  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 30px auto;
+    position: relative;
+    top: 100px;
+    opacity: 0;
+    transition: .5s;
+}
+.contact .contactForm .name, .contact .contactForm .email, .contact .contactForm .content, .contact .contactForm .checkbox, .contact .contactForm .submit {
+    width: 100%;
+    margin: 10px 0;
+}
+textarea {
+    resize: none;
+    padding-top: 10px;
+    height: 140px;
+}
+.inputName, .inputMail, .submit, textarea {
+    width: 100%;
+    border: none;
+    color: white;
+    background-color: #1e242c;
+    height: 40px;
+    padding-left: 10px;
+    font-size: 16px;
+}
+.submit {
+    text-transform: uppercase;
+    -webkit-border-radius: 0px;
+    -webkit-appearance: none;
+    border-radius: 0px;
+    cursor: pointer;
+}
+body > div > section > div > div:nth-child(5) > form > label.checkbox{
+    color: white;
+}
+body > div > section > div > div:nth-child(5) > form{
+    max-width: 850px;
+    justify-content: center;
+    align-items: center;
+    margin-left: auto;
+    margin-top: 50px;
+    margin-right: auto;
+    padding-bottom: 100px;
+}
+body > div > section > div > div:nth-child(5) > form > input:hover{
+    background-color:#42c0fb ;
+    transition: all 0.5s;
+    border: none;
+   
+}
+body > div > section > div > div:nth-child(5) > form > input{
+    border: 2px solid #fff;
+    max-width: 300px;
+}
+body > div > section > div > div.end1 > div.end{
+    width: 100%;
+    height: 200px;
+    background-color: #1b242f;
+}
+body > div > section > div > div.end1 > div.end > ul{
+    display: flex;
+    width: 100%;
+    height: 80%;
+    padding-top: 30px;
+    list-style-type: none;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+}
+
+body > div > section > div > div.end1 > div.end > ul > li{
+    height: 70px;
+  width: 70px;
+  display: inline-block;
+  margin: 0 10px;
+  z-index: 100;
+  cursor: pointer;
+  position: relative;
+}
+body > div > section > div > div.end1 > div.end > ul > li:before{
+    content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  z-index: -1;
+  border-radius: 10%;
+  background: linear-gradient(45deg, #00aeff, #e31b6d);
+  transition: all 0.3s ease-in;
+}
+body > div > section > div > div.end1 > div.end > ul > li:hover:before{
+    transform: rotate(360deg);
+    border-radius: 100%;
+}
+body > div > section > div > div.end1 > div.end > ul > li> a > span{
+    font-size: 27px;
+    line-height: 70px;
+    color: #fff;
+    transition: all 0.3s ease-out;
+}
+body > div > section > div > div.end1 > div.end > ul > li:hover > a > span{
+    transform: scale(1.2);
+}
+.colorfull2{
+    color:#e31b6d;
+}
+body > div > section > div > div.end1 > div.end > p{
+    font-size: 12px;
+}
+@media only screen and (max-width: 1300px){
+    body > div > section > div > div.gallery > div{
+        justify-content: center;
+        align-items: center;
+        margin-left: auto;
+        margin-right: auto;
+        width: 100%;
+    }
+}
+@media only screen and (max-width: 1300px){
+    body > a > section > div.Allpriority > div > ul > li{
+        display: inline-block;
+    }
+}
+
+@media only screen and (max-width: 900px){
+    body > a > section.About{
+    height: 1800px;
+    }
+}
+@media only screen and (max-width: 600px){
+    body > a > section.About{
+    height: 2300px;
+    }
+}
+@media only screen and (max-width: 400px){
+    body > a > section.About{
+    height: 2400px;
+    }
+}
+
+
+@media only screen and (max-width: 900px){
+body > a > section.About > div.MoreAbout{
+display: grid;
+}}
+
+@media only screen and (max-width: 900px){
+body > a > section.About > div.MoreAbout > div.photo{
+    background-size: 100%;
+    padding: none;
+}}
+
+@media only screen and (max-width: 900px){
+body > a:nth-child(3) > section > div.MoreAbout > div.photo {
+    padding: 0;
+}}
+@media only screen and (max-width: 900px){
+body > a:nth-child(3) > section > div.MoreAbout > div.photo > div {
+    padding: 286px 0 130px 0;
+}}
+
+
+@media only screen and (max-width: 600px){
+body > a > section.About > div.Allpriority > div > ul{
+   display: grid;
+   width: 100%;
+	margin: 0 auto;
+}}
+
+@media only screen and (max-width: 600px){
+body > a:nth-child(3) > section > div.Allpriority > div > ul > li {
+   width: 100%; 
+   padding-left: 40px;
+    padding-right: 40px;
+}}
+@media only screen and (max-width: 600px){
+body > div > section > div > div.gallery > ul{
+    display: contents;
+}
+@media only screen and (max-width: 600px){
+body > header > div > div.video-overlay > h1{
+font-size: 25pt;
+}
+}
+@media only screen and (max-width: 600px){
+body > header > div > div.video-overlay > p{
+    font-size: 25pt;
+}
+}
+@media only screen and (max-width: 550px){
+    body > header > div > div.video-overlay > h1{
+    font-size: 20pt;
+    }
+    }
+    @media only screen and (max-width: 550px){
+    body > header > div > div.video-overlay > p{
+        font-size: 20pt;
+    }
+    }
+    @media only screen and (max-width: 400px){
+        body > header > div > div.video-overlay > h1{
+        font-size: 17pt;
+        }
+        }
+        @media only screen and (max-width: 400px){
+        body > header > div > div.video-overlay > p{
+            font-size: 17pt;
+        }
+        }
+ 
