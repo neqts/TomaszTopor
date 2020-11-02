@@ -71,7 +71,7 @@
         <div class="photo" data-aos="fade-right" data-aos-duration="800"><div class="info"><p class="who">Who's this guy?</p><p class="whoAbout">I'm a  <strong >Front-End Developer</strong>  working on contract,
             I have serious passion for UI effects, animations and creating <strong class="colorfull">intuitive</strong>, dynamic user experiences. <br>
            <p class="colorfull"> Let's make something special.</p></p><br><p></p></div></div>
-        <div class="container">
+        <div class="container" data-aos="fade-left" data-aos-duration="800">
             <div class="skills">
                 <div class="skill">
                   <div class="skill-name"> <p>HTML</p></div>
@@ -124,23 +124,8 @@
                     </div>
                   </div>
               </div>
-          
-              <script>
-                $('.skill-per').each(function(){
-                  var $this = $(this);
-                  var per = $this.attr('per');
-                  $this.css("width",per+'%');
-                  $({animatedValue: 0}).animate({animatedValue: per},{
-                    duration: 1000,
-                    step: function(){
-                      $this.attr('per', Math.floor(this.animatedValue) + '%');
-                    },
-                    complete: function(){
-                      $this.attr('per', Math.floor(this.animatedValue) + '%');
-                    }
-                  });
-                });
-              </script>
+              <script src="skill.js"></script>
+              
         </div>
     </div>
 </section></a>
