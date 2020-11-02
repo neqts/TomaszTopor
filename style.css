@@ -743,8 +743,16 @@ body > a:nth-child(3) > section > div.MoreAbout > div.photo {
 }}
 @media only screen and (max-width: 900px){
 body > a:nth-child(3) > section > div.MoreAbout > div.photo > div {
-    padding: 286px 0 130px 0;
+    padding: 400px 0 130px 0;
 }}
+@media only screen and (max-width: 900px){
+    body > a:nth-child(3) > section > div.MoreAbout > div.photo > div {
+        padding: 350px 0 130px 0;
+    }}
+    @media only screen and (max-width: 900px){
+        body > a:nth-child(3) > section > div.MoreAbout > div.photo > div {
+            padding: 300px 0 130px 0;
+        }}
 
 
 @media only screen and (max-width: 600px){
@@ -763,6 +771,7 @@ body > a:nth-child(3) > section > div.Allpriority > div > ul > li {
 @media only screen and (max-width: 600px){
 body > div > section > div > div.gallery > ul{
     display: contents;
+}
 }
 @media only screen and (max-width: 600px){
 body > header > div > div.video-overlay > h1{
@@ -795,3 +804,15 @@ body > header > div > div.video-overlay > p{
         }
         }
        
+        @media only screen and (max-width: 400px){
+           nav{
+                display: none;
+            }
+            }
+            @media only screen and (max-width: 900px){
+                nav{
+                    position: absolute;
+                    margin-top: -29px;
+                 }
+                 }
+               
