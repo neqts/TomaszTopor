@@ -554,7 +554,7 @@ body > div > section > div > div:nth-child(5){
     width: 100%;
     justify-content: center;
     align-items: center;
-    height: 500px;
+    height: 550px;
     left: 0;
     margin-top: 315px;
     background-color:#252934 ;
@@ -816,3 +816,14 @@ body > header > div > div.video-overlay > p{
                  }
                  }
                
+                 @media only screen and (max-width: 400px){
+                 body > header{
+                    display: flex;
+                    height: 853px;
+                }}
+
+
+                @media only screen and (max-width: 500px){
+                body > a:nth-child(3) > section > div.MoreAbout > div.container {
+                    width: 70%;
+                }}
