@@ -493,7 +493,7 @@ body > div > section > div > div.gallery > div > div > div{
 }
 body > div > section > div > div.gallery > div > div > div:hover{
     opacity: 1;
-    transition:all 1s ease;
+    transition:all 0.5s ease;
 }
 body > div > section > div > div.gallery > div > div > div > div{
     border: 2px solid #e31b6d ;
