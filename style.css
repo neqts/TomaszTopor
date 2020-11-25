@@ -158,7 +158,11 @@ body > header > div > div.video-overlay > a > div:hover > i {
 a{
     text-decoration: none;
 }
-
+@media only screen and (max-width: 1900px){
+body > section > nav{
+margin-top: -15px;
+}
+}
 /* heder bar */
 body > section > a > nav{
     color: black;
@@ -812,7 +816,7 @@ body > header > div > div.video-overlay > p{
             @media only screen and (max-width: 900px){
                 nav{
                     position: absolute;
-                    margin-top: -29px;
+                  
                  }
                  }
                
@@ -893,4 +897,8 @@ body > header > div > div.video-overlay > p{
                     background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
                     -webkit-background-clip: text;
                     font-weight: 600;
+                  }
+                  body > div > section > div > div.gallery{
+                      z-index: 1000;
+                      position: relative;
                   }
