@@ -948,4 +948,10 @@ body > header > div > div.video-overlay > p{
                     background: #FFFA65;
                     animation-delay: 0s;
                   }
-                                     
+            
+
+                  @media only screen and (max-width: 1900px){
+                      .social{
+                          display: none;
+                      }
+                  }
