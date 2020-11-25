@@ -371,12 +371,12 @@ body > a:nth-child(3) > section > div.MoreAbout > div.container > div > div > di
     margin: 10px 0;
 }
 body > a:nth-child(3) > section > div.MoreAbout > div.container > div > div > div.skill-bar{
-    height: 20px;
+    height: 23px;
   background: #cacaca;
   border-radius: 8px;
 }
 body > a:nth-child(3) > section > div.MoreAbout > div.container > div > div > div.skill-bar > div{
-    height: 20px;
+    height: 23px;
     background-color: #42c0fb;
     border-radius: 8px;
     width: 0;
@@ -827,3 +827,70 @@ body > header > div > div.video-overlay > p{
                 body > a:nth-child(3) > section > div.MoreAbout > div.container {
                     width: 70%;
                 }}
+
+
+                body > a > section > div.MoreAbout > div.container.aos-init.aos-animate > div > div> div.skill-bar > div > i{
+                    float: left;
+                    margin-left: 5px;
+                    margin-top: 2px;
+                    font-size: 20px;
+                }
+                body > a > section > div.MoreAbout > div.container.aos-init.aos-animate > div > div > div.skill-bar > div > p{
+                    font-size: 14px;
+                    padding-top: 2px;
+                }
+                body > a > section > div.MoreAbout > div.container.aos-init.aos-animate > div > div{
+                    padding: 0 0 20px 0;
+                }
+          
+                .social{
+                    z-index: 999;
+                    position: fixed;
+                    height: 100vh;
+                    display: flex;
+                    flex-direction: column;
+                    justify-content: center;
+                    transform: translate(-245px, 0);
+                  }
+                  
+                  .social a{
+                    color: #fff;
+                    background: rgba(0, 0, 0, 0.4);
+                    font-size: 20px;
+                    font-weight: 600;
+                    text-decoration: none;
+                    display: block;
+                    margin: 5px;
+                    padding: 20px;
+                    width: 300px;
+                    text-align: right;
+                    border-radius: 50px;
+                    transition: 1s;
+                    transition-property: transform;
+                  }
+                  
+                  .social a:hover{
+                    transform: translate(140px, 0);
+                  }
+                  
+                  .social i{
+                    margin-left: 10px;
+                    font-size: 30px;
+                    width: 30px;
+                    height: 30px;
+                  }
+                  
+                  .social a:nth-child(1) i{
+                    color: #1DA0F0;
+                  }
+                  
+                  .social a:nth-child(2) i{
+                    color: black;
+                  }
+                  
+                  .social a:nth-child(3) i{
+                    color: transparent;
+                    background-image: linear-gradient(45deg, #FFDF9E, #E56969, #8A49A1);
+                    -webkit-background-clip: text;
+                    font-weight: 600;
+                  }
