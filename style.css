@@ -902,3 +902,9 @@ body > header > div > div.video-overlay > p{
                       z-index: 1000;
                       position: relative;
                   }
+                  body > section > nav{
+                      z-index: 2000;
+                  }
+                  body > header > div.wrapper > div.video-overlay > a{
+                      z-index: 1000;
+                  }
