@@ -955,3 +955,7 @@ body > header > div > div.video-overlay > p{
                           display: none;
                       }
                   }
+
+                  body > div > section > div > div.end1 > div.end > ul > li{
+                      z-index: 10000;
+                  }
