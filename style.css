@@ -137,7 +137,7 @@ body > header > div > div.video-overlay > a > div > i{
 
 
 body > header > div > div.video-overlay > a > div:hover > i {
-    t -webkit-transform: rotate(45deg);
+     -webkit-transform: rotate(45deg);
     -moz-transform: rotate(90deg);
     -ms-transform: rotate(90deg);
     -o-transform: rotate(90deg);
@@ -858,8 +858,8 @@ body > header > div > div.video-overlay > p{
                   }
                   
                   .social a{
-                    color: #fff;
-                    background: rgba(0, 0, 0, 0.4);
+                    color: #e31b6d;
+                   
                     font-size: 20px;
                     font-weight: 600;
                     text-decoration: none;
@@ -962,4 +962,9 @@ body > header > div > div.video-overlay > p{
 
                   body > div > section > div > div.end1{
                       z-index: 100000;
+                  }
+
+
+                  html{
+                      background-color: #f5f5f5;
                   }
